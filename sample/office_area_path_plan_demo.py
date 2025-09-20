@@ -37,7 +37,7 @@ def _demo_map():
 
     # plot_occupancy_grid(og)
 
-    start = (0.0, 0.0, 0.0)
+    start = (0.0, 0.0, -math.pi)
     goal = (23.0, -3.0, 0.0)
 
     return og, start, goal

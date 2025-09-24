@@ -50,7 +50,7 @@ def main():
     xr = (og.meta.origin[0], og.meta.origin[0] + og.w * og.meta.resolution)
     yr = (og.meta.origin[1], og.meta.origin[1] + og.h * og.meta.resolution)
 
-    lp = SimpleRSLocalPlanner(rho=0.4, validation_ds=0.1, max_conn_len=0.8)
+    lp = SimpleRSLocalPlanner(rho=0.4, validation_ds=0.1, max_conn_len=0.4)
 
     planner = RRTStar_SimpleRS(
         grid=og, lp=lp, x_range=xr, y_range=yr,

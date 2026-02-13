@@ -5,9 +5,13 @@ This script demonstrates the use of RRT* (Rapidly-exploring Random Tree Star)
 with a simplified Reeds-Shepp-like steering local planner
 for path planning on a 2D occupancy grid.
 """
+from __future__ import annotations
+
 import os
 import sys
-sys.path.append(os.getcwd())
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import random
 import math
